@@ -1,4 +1,4 @@
-#My Current Portfolio
+# My Current Portfolio
 https://seanmena.com
-~or~
+ or 
 https://portfolio-bd1cd.firebaseapp.com/#contact
