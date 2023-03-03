@@ -1,0 +1,269 @@
+
+.home {
+   text-align: center;
+}
+  
+.header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.big-title {
+    margin-top: 10%;
+    font-size: 4.5vw;
+    font-weight: 900;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.work-title{
+    color: #0400BF;
+    font-size: 3vw;
+}
+  
+.sub-title {
+    margin-top: 0;
+    font-size: 2vw;
+    text-align: center;
+    color: #686666;
+    font-weight: 900;
+}
+
+
+.btn {
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8%;
+    font-size: 2vw;
+}
+
+.btn a {
+    color: white;
+}
+
+
+.btn-container {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+/* PROJECTS */
+.bar{
+    max-width: 100%;
+    left: 0;
+    position: absolute;
+}
+
+.project-container{
+    text-align: left;
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-flex;
+    justify-content: ce;
+    margin: 0 auto;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.p-cont {
+    word-wrap: break-word;
+    max-width: 45%;
+    min-width: 45%;
+    margin: 2%;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+
+.p-cont-img {
+    max-width: 100%;
+    border-bottom: solid 3px black;
+    margin-bottom: 3%;
+    /* max-height: 60%; */
+    /* min-height: 43%; */
+    overflow: hidden;
+    width: 100%;
+}
+
+.p-cont-img img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.p-cont h2 {
+    margin: 0;
+    /* padding-top: 5%; */
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 900;
+}
+.p-cont h3 {
+    margin: 0;
+    /* padding-top: 2%; */
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 700;
+}
+
+.p-cont p {
+    opacity: .6;
+    word-wrap: break-word;
+    margin: 0;
+    padding-top: 0%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+.project-title{
+    text-align: center;
+    margin-top: 0;
+    font-size: 4.5vw;
+    margin-bottom: 5%;
+    font-weight: 900;
+    padding-bottom: 5%s;
+}
+
+.projects{
+    margin-top: 35%;
+}
+.sub-container {
+    display: flex;
+    margin-left: 4%;
+    /* justify-content: center; */
+}
+
+.sub-container a {
+    /* text-align: center; */
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    /* margin-bottom: 0%; */
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    padding-top: 8px;
+    border-radius: 5px;
+}
+
+.sub-container h2:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+
+
+
+
+/* ABOUT */
+/* 
+.about{
+    margin-top: 35%;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+}
+.container h1 {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.container h2 {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.container p {
+    padding-left: 5%;
+    padding-right: 5%;
+} 
+
+*/
+
+
+
+
+.container {
+    background-color: white;
+    word-wrap: break-word;
+    margin-top: 5%;
+    max-width: 75%;
+    min-width: 75%;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+.container h1 {
+    font-size: 2.5vw;
+}
+
+.container a {
+    color: #0400BF;
+}
+
+.contact-title {
+    margin-top: 5%;
+    margin-bottom: 0;
+    font-size: 4vw;
+}
+
+.contact {
+    margin-top: 35%;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+
+    .project-container{
+        text-align: left;
+        max-width: 100%;
+        max-height: 100%;
+        display: inline-flex;
+        flex-direction: column;
+        margin-bottom: 3%;
+    }
+
+    .p-cont {
+        margin: 0 auto;
+        max-width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .container {
+        word-wrap: break-word;
+        margin-top: 5%;
+        border: solid black;
+        max-width: 75%;
+        min-width: 75%;
+        height: auto;
+        border-radius: 10px;
+        text-align: left;
+    }
+
+    
+}
