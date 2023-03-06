@@ -15,6 +15,7 @@ const Home = () => {
 
     return <a href={`mailto:${email}${params}`}>{children}</a>;
   };
+
   return (
     <div id="home" className="home">
       {/* HEADER */}
@@ -51,47 +52,49 @@ const Home = () => {
               <div className="p-cont-img">
                 <img alt="bookclub" src={bookclub}></img>
               </div>
-              {/* <h1 className="project-title">Book Club</h1> */}
-              <h2>Book Club</h2>
-              <p>
-                Users may signup/login to their account. They can search for
-                their favortie books, and add them to their unique "My books"
-                page. This is a full stack website.
-              </p>
-              <h3>What I did</h3>
-              <p>I designed, built, and deployed this website</p>
-              <h3>What I used</h3>
-              <p>Figma, React, CSS, Javascript, Firebase, Google Books API</p>
-              <h3>Challenges</h3>
-              <p>
-                Pulling data using a third party API, and storing it in my own
-                database was definitely a challenge. I learned a lot about how
-                to move data fluidly through multiple points from this project.
-              </p>
-              <div className="sub-container">
-                <a
-                  href="https://github.com/seanmena/Books"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Repo
-                </a>
+              <div className="inside-cont">
+                <h2>Book Club</h2>
+                <p>
+                  Users may signup/login to their account. They can search for
+                  their favortie books, and add them to their unique "My books"
+                  page. This is a full stack website.
+                </p>
+                <h3>What I did</h3>
+                <p>I designed, built, and deployed this website</p>
+                <h3>What I used</h3>
+                <p>Figma, React, CSS, Javascript, Firebase, Google Books API</p>
+                <h3>Challenges</h3>
+                <p>
+                  Pulling data using a third party API, and storing it in my own
+                  database was definitely a challenge. I learned a lot about how
+                  to move data fluidly through multiple points from this
+                  project.
+                </p>
+                <div className="sub-container">
+                  <a
+                    href="https://github.com/seanmena/Books"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Repo
+                  </a>
 
-                <a
-                  href="https://book-club-9650b.firebaseapp.com/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Live
-                </a>
+                  <a
+                    href="https://book-club-9650b.firebaseapp.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Live
+                  </a>
 
-                <a
-                  href="https://www.youtube.com/watch?v=ehQW5LKX8iw&feature=youtu.be"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Demo
-                </a>
+                  <a
+                    href="https://www.youtube.com/watch?v=ehQW5LKX8iw&feature=youtu.be"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Demo
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -99,48 +102,50 @@ const Home = () => {
               <div className="p-cont-img">
                 <img alt="sleepyangler" src={sleepyangler}></img>
               </div>
-              <h2>Slepey Angler</h2>
-              <p>
-                Fly fishing guide's website. Admin may create/delete blog posts,
-                upload/delete images to a gallery, manage users contact form
-                submissions. This is a full stack website.
-              </p>
-              <h3>What I did</h3>
-              <p>I designed, built, and deployed this website</p>
-              <h3>What I used</h3>
-              <p>Figma, React, CSS, Javascript, Firebase</p>
-              <h3>Challenges</h3>
-              <p>
-                The auth system was definitely the biggest challenge for me.
-                Using protected routes, and rendering elements based on
-                authorization status took a lot of research. I learned a lot
-                about auth, routing, and CRUD from this project.
-              </p>
+              <div className="inside-cont">
+                <h2>Sleepy Angler</h2>
+                <p>
+                  Fly fishing guide's website. Admin may create/delete blog
+                  posts, upload/delete images to a gallery, manage users contact
+                  form submissions. This is a full stack website.
+                </p>
+                <h3>What I did</h3>
+                <p>I designed, built, and deployed this website</p>
+                <h3>What I used</h3>
+                <p>Figma, React, CSS, Javascript, Firebase</p>
+                <h3>Challenges</h3>
+                <p>
+                  The auth system was definitely the biggest challenge for me.
+                  Using protected routes, and rendering elements based on
+                  authorization status took a lot of research. I learned a lot
+                  about auth, routing, and CRUD from this project.
+                </p>
 
-              <div className="sub-container">
-                <a
-                  href="https://github.com/seanmena/sleepyangler"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Repo
-                </a>
+                <div className="sub-container">
+                  <a
+                    href="https://github.com/seanmena/sleepyangler"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Repo
+                  </a>
 
-                <a
-                  href="https://sleepyangler.com/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Live
-                </a>
+                  <a
+                    href="https://sleepyangler.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Live
+                  </a>
 
-                <a
-                  href="https://youtu.be/uIvjJZ4A66c"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Demo
-                </a>
+                  <a
+                    href="https://youtu.be/uIvjJZ4A66c"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Demo
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -150,75 +155,80 @@ const Home = () => {
               <div className="p-cont-img">
                 <img alt="newspage" src={newspage}></img>
               </div>
-              <h2>News Homepage</h2>
-              <p>
-                A Front-end Mentor Challenge. The landing page for a news
-                company. This project is only frontend.
-              </p>
-              <h3>What I did</h3>
-              <p>I took a design and built it.</p>
-              <h3>What I used</h3>
-              <p>React and CSS</p>
-              <h3>Challenges</h3>
-              <p>
-                Creating a complex design without using any CSS frameworks was a
-                challenge. I hadn't jumped fully into CSS grid before this
-                project. I learned a lot about CSS and responsive website
-                building from this project.
-              </p>
-              <div className="sub-container">
-                <a
-                  href="https://github.com/seanmena/LandingPage"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Repo
-                </a>
+              <div className="inside-cont">
+                <h2>News Homepage</h2>
+                <p>
+                  A Front-end Mentor Challenge. The landing page for a news
+                  company. This project is only frontend.
+                </p>
+                <h3>What I did</h3>
+                <p>I took a design and built it.</p>
+                <h3>What I used</h3>
+                <p>React and CSS</p>
+                <h3>Challenges</h3>
+                <p>
+                  Creating a complex design without using any CSS frameworks was
+                  a challenge. I hadn't jumped fully into CSS grid before this
+                  project. I learned a lot about CSS and responsive website
+                  building from this project.
+                </p>
+                <div className="sub-container">
+                  <a
+                    href="https://github.com/seanmena/LandingPage"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Repo
+                  </a>
 
-                <a
-                  href="https://seanmena.github.io/LandingPage/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Live
-                </a>
+                  <a
+                    href="https://seanmena.github.io/LandingPage/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Live
+                  </a>
+                </div>
               </div>
             </div>
             <div className="p-cont">
               <div className="p-cont-img">
                 <img alt="employee" src={employeemanager}></img>
               </div>
-              <h2>Employee Manager</h2>
-              <p>
-                Users may manage their team in a database, they can create,
-                read, update, and delete members. This project is only backend.
-              </p>
-              <h3>What I did</h3>
-              <p>I took a user story and built it.</p>
-              <h3>What I used</h3>
-              <p>Node.js, MySQL</p>
-              <h3>Challenges</h3>
-              <p>
-                MySQL workbench was a learning curve, I've worked mostly with
-                MongoDB, Firebase, and other NoSQL databases. I learned a alot
-                about table management in this project.
-              </p>
-              <div className="sub-container">
-                <a
-                  href="https://github.com/seanmena/EmployeeManager"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Repo
-                </a>
+              <div className="inside-cont">
+                <h2>Employee Manager</h2>
+                <p>
+                  Users may manage their team in a database, they can create,
+                  read, update, and delete members. This project is only
+                  backend.
+                </p>
+                <h3>What I did</h3>
+                <p>I took a user story and built it.</p>
+                <h3>What I used</h3>
+                <p>Node.js, MySQL</p>
+                <h3>Challenges</h3>
+                <p>
+                  MySQL workbench was a learning curve, I've worked mostly with
+                  MongoDB, Firebase, and other NoSQL databases. I learned a alot
+                  about table management in this project.
+                </p>
+                <div className="sub-container">
+                  <a
+                    href="https://github.com/seanmena/EmployeeManager"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Repo
+                  </a>
 
-                <a
-                  href="https://www.youtube.com/watch?v=CoCmhje6Lmw"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Demo
-                </a>
+                  <a
+                    href="https://www.youtube.com/watch?v=CoCmhje6Lmw"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Demo
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -279,6 +289,16 @@ const Home = () => {
                   target="_blank"
                 >
                   Github
+                </a>
+              </h1>
+              <h1>
+                Static resume link:{" "}
+                <a
+                  href="https://docs.google.com/document/d/1iop4H8UbKZliw1mscqDUpO5HWgYyb9XHLz5IcSwi-4o/edit?usp=sharing"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Here
                 </a>
               </h1>
             </div>

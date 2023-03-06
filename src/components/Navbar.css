@@ -79,7 +79,7 @@ a{
     transform-origin: 1px;
 }
 
-.x-p{   
+.x-p{
     margin-top: 2%;
     z-index: 1000;
     width: 2rem;
@@ -87,19 +87,19 @@ a{
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
-    z-index: 1000;
+    z-index: 10000;
     float: right;
-    padding-bottom: 5%;
+    /* padding-bottom: 5%; */
 }
 
 .x{
     z-index: 1000;
     transform: scale(1.5);
     width: 1.5rem;
-    height: 0.20rem;
+    /* height: 0.20rem; */
     border-radius: 10px;
     background-color: #d9d9d9;
-    transform-origin: 1px;
+    transform-origin: 30px;
 }
 
 .x1{
