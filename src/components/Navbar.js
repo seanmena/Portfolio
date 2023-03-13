@@ -1,40 +1,47 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { ReactComponent as Hamburger } from "../assets/icons/hamburger.svg";
+import { ReactComponent as X } from "../assets/icons/x.svg";
+// import { ReactComponent as Brand } from "../../assets/icons/logo.svg";
 import "./Navbar.css";
-import x from "../assets/x.png";
 
 const Navbar = () => {
-  const [click, setClick] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(false);
 
-  const handleClick = () => setClick(!click);
+  const handleShowNavbar = () => {
+    setShowNavbar(!showNavbar);
+  };
+
   return (
-    <div>
-      <div>
-        <div className={click ? "hide-me" : "hamburger"} onClick={handleClick}>
-          <div className="burger burger1" />
-          <div className="burger burger2" />
-          <div className="burger burger3" />
+    <nav className="navbar">
+      <div className="container-nav">
+        <div className="logo"></div>
+        <div
+          className={showNavbar ? "hide-me" : "menu-icon"}
+          onClick={handleShowNavbar}
+        >
+          <Hamburger />
         </div>
-
-        <div className={click ? "x-p" : "hide-me"} onClick={handleClick}>
-          <img className={"x"} alt="x" src={x}></img>
+        <div
+          className={showNavbar ? "x-icon" : "hide-me"}
+          onClick={handleShowNavbar}
+        >
+          <X />
         </div>
-
-        <div id="nav-box" className={click ? "nav-menu active " : "navbar"}>
-          <li className="nav-logo">
-            <a href="/">Sean Mena</a>
-          </li>
-          <li className="nav-item">
-            <a href="#home">Home</a>
-          </li>
-          <li className="nav-item">
-            <a href="#projects">Projects</a>
-          </li>
-          <li className="nav-item">
-            <a href="#contact">Contact</a>
-          </li>
+        <div className={`nav-elements  ${showNavbar && "active"}`}>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

@@ -11,27 +11,53 @@
     align-items: center;
 }
   
-.big-title {
-    margin-top: 10%;
-    font-size: 4.5vw;
+
+.big-ani{
+    /* margin-top: 10%; */
+    font-size: 2.75vw;
+    animation: fadeIn 3s;
     font-weight: 900;
     margin-bottom: 0;
+    padding-bottom: 0;
     text-align: center;
 }
+
+.sub-ani{
+    display: inline-block;
+    font-size: 1.5vw;
+}
+
 
 .work-title{
     color: #0400BF;
-    font-size: 3vw;
+    font-size: 2.25vw;
 }
   
 .sub-title {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    animation: typing;
+    animation-duration: 2s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
     margin-top: 0;
-    font-size: 2vw;
     text-align: center;
     color: #686666;
     font-weight: 900;
+    
 }
 
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0 };
+    100% { opacity: 1 };
+}
 
 .btn {
     margin: 0 auto;
@@ -43,8 +69,18 @@
     font-size: 2vw;
 }
 
+.btn:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+}
+
 .btn a {
     color: white;
+    text-decoration: none;
+}
+.btn a:visited {
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -52,7 +88,6 @@
     justify-content: center;
     display: flex;
     gap: 20px;
-    width: ;
     margin-top: 20px;
 }
 
@@ -60,6 +95,7 @@
 /* PROJECTS */
 .bar{
     width: 3000px;
+    height: auto;
     max-width: 100%;
     left: 0;
     position: absolute;
@@ -70,6 +106,7 @@
     max-width: 100%;
     max-height: 100%;
     display: inline-flex;
+    justify-content: center;
     margin: 0 auto;
     margin-right: 3%;
     margin-left: 3%;
@@ -90,7 +127,6 @@
 .p-cont-img {
     max-width: 100%;
     max-height: 100%;
-    border-bottom: solid px black;
 }
 
 .p-cont-img img{
@@ -179,13 +215,12 @@
 }
 
 .sub-container a {
-    /* text-align: center; */
     margin-left: 1%;
     margin-right: 1%;
     margin-bottom: 2%;
-    /* margin-bottom: 0%; */
     font-weight: 700;
     background-color: black;
+    text-decoration: none;
     color: white;
     padding: 10px;
     padding-top: 8px;
@@ -288,7 +323,7 @@
       
     .sub-title {
         margin-top: 0;
-        font-size: 3vw;
+        font-size: 2.5vw;
         text-align: center;
         color: #686666;
         font-weight: 900;
